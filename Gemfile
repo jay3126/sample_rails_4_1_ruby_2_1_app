@@ -7,6 +7,10 @@ gem 'rails', '4.1.0.beta1'
 gem 'mysql2'
 
 gem 'thin'
+gem "twitter-bootstrap-rails"
+gem "therubyracer"
+gem "less-rails"              #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'bootstrap-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
@@ -42,11 +46,11 @@ gem 'spring',        group: :development
 # gem 'unicorn'
 
 group :development,:test do
- gem 'debugger'
+	gem 'debugger'
 
- #Use Capistrano for deployment
- #gem 'capistrano-rails'
- gem 'cucumber-rails', :require => false
- gem 'rspec-rails'
- gem "rspec-core"
+	#Use Capistrano for deployment
+	#gem 'capistrano-rails'
+	gem 'cucumber-rails', :require => false
+	gem 'rspec-rails'
+	gem "rspec-core"
 end
